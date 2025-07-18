@@ -71,7 +71,7 @@ input[type="password"] {
     text-align: center;
     font-weight: bold;
     margin-bottom: 5px;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     min-height: 20px;
     font-family: 'Press Start 2P', cursive, Arial, sans-serif;
 }
@@ -89,7 +89,19 @@ input[type="password"] {
     padding-right: 38px;
     box-sizing: border-box;
     height: 40px;
-    /* Fixed height for consistency */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s, border-width 0.2s;
+}
+
+.password-wrapper input[type="password"]:focus,
+.password-wrapper input[type="text"]:focus {
+    border-color: #fbc2eb;
+    border-width: 2.5px;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(251, 194, 235, 0.35);
 }
 
 #togglePassword {
@@ -138,8 +150,8 @@ input[type="password"] {
 }
 
 .checklist-box {
-    background: #fffde7;
-    border: 1px solid #ffe082;
+    background: #f8f5ff;
+    border: 1px solid #a18cd1;
     border-radius: 6px;
     padding: 14px 16px 10px 16px;
     margin-top: 18px;

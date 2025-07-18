@@ -54,7 +54,8 @@ function updateStrengthBar(strength) {
 
 function updateStrengthLabel(strength, password) {
     if (!password) {
-        strengthLabel.textContent = '';
+        strengthLabel.textContent = 'Start typing to check your password strength.';
+        strengthLabel.style.color = '#bdbdbd';
         return;
     }
     if (strength <= 2) {
@@ -114,4 +115,8 @@ function updateChecklist(password) {
     } else {
         checkLength.classList.remove('checked');
     }
-} 
+}
+
+// Set default feedback and label on page load
+updateFeedback(0, "");
+updateStrengthLabel(0, ""); 
