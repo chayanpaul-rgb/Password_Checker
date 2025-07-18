@@ -14,7 +14,7 @@ if (togglePassword) {
     togglePassword.addEventListener('click', function () {
         const isPassword = passwordInput.type === 'password';
         passwordInput.type = isPassword ? 'text' : 'password';
-        togglePassword.textContent = isPassword ? '🫣' : '🙂';
+        togglePassword.textContent = isPassword ? '🙈' : '👁️';
         togglePassword.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
     });
 }
